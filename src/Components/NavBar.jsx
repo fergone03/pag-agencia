@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
+import styles from "./NavBar.module.css";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const NavBar = () => {
+  const [navBarOpen, setNavBarOpen] = React.useState(false);
   const links = [
     { id: 1, link: "Home" },
     { id: 2, link: "Services" },
@@ -10,22 +13,23 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="nav-bar">
-      <ul className="nav-list">
-        {links.map(({ id, link, display }) => (
-          <li key={id} className="nav-item">
-            <Link
-              to={link}
-              smooth={true}
-              duration={500}
-              className="nav-link"
-            >
-              {display || link}
+    <div className={styles.navBar}>
+     <p>DISO | Digital Solutions</p>
+     <AiOutlineMenu />
+    { 
+      navBarOpen  &&(
+        <ul>
+        {links.map((x) => (
+          <div>
+            <Link>
+            {x.link === "HowWeWork" ? "How we work" : x.link}
             </Link>
-          </li>
+          </div>
         ))}
       </ul>
-    </nav>
+      )
+    }
+    </div>
   );
 };
 
