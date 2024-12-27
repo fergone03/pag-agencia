@@ -1,9 +1,10 @@
-*,*::after,*::before{
-}
+
 .navBar {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #4a4564;
+
 }
 
 .navOpen {
