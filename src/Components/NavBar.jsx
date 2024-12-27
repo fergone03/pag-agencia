@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import styles from "./NavBar.module.css";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const NavBar = () => {
   const [navBarOpen, setNavBarOpen] = React.useState(false);
@@ -13,11 +13,11 @@ const NavBar = () => {
   ];
 
   return (
-    <div className={styles.navBar}>
+    <div className={navBarOpen === true ? styles.navBar : styles.navOpen}>
      <p>DISO | Digital Solutions</p>
-     <AiOutlineMenu />
-    { 
-      navBarOpen  &&(
+     <AiOutlineMenu onClick = {() => setNavBarOpen(!navBarOpen)} size={25}/>
+     {/* {!navBarOpen && <AiOutlineClose size={25}/>} */}
+     {navBarOpen  &&(
         <ul>
         {links.map((x) => (
           <div>
