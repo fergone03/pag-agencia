@@ -1,0 +1,13 @@
+.howWeWork {
+  display: flex;
+  padding-top: 6.25em;
+  padding-bottom: 6.25em;
+  flex-direction: column;
+  background: linear-gradient(180deg, #1a1826, #413b5e);
+}
+.title {
+  font-size: 3em;
+  color: #f1f1f1;
+  font-weight: 400;
+  text-align: center;
+}

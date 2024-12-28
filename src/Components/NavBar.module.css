@@ -1,15 +1,120 @@
-
 .navBar {
+  transition: 0.5s;
   display: flex;
+  height: 3.13em;
+  width: 100%;
+  position: absolute;
   justify-content: space-around;
   align-items: center;
-  background-color: #4a4564;
-
 }
 
 .navOpen {
+  transition: 0.5s;
   display: flex;
+  position: absolute;
   height: 100%;
   width: 100%;
+  position:fixed;
   background-color: #4a4564;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navLink {
+  display: flex;
+  font-size: 2em;
+  font-weight: 400;
+  color: #f1f1f1;
+  padding-top: 2.5em;
+}
+
+.navLink:hover {
+  cursor: pointer;
+}
+
+.border {
+  display: flex;
+  height: 1px;
+  animation-name: animacionborder;
+  animation-duration: 1s;
+  background-color: yellow;
+}
+
+@keyframes animacionborder {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 1px;
+  }
+}
+
+.logo {
+  display: flex;
+  color: #f1f1f1;
+  font-weight: 600;
+}
+@media (min-width: 800px) {
+  .logo {
+    font-size: 1.5em;
+  }
+  .navBar {
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+  }
+  .linksContainer {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .navLink {
+    font-weight: 400;
+    padding-top: 0.2em;
+    font-size: 1.4em;
+    transition: 0.5s;
+  }
+  .navLink:hover {
+    font-size: 1.5em;
+  }
+  .contactLink:hover {
+    font-size: 1.5em;
+  }
+
+  .navOnScroll {
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    background-color: #4a4564;
+  }
+}
+.navOnScroll {
+  transition: 0.5s;
+  position:fixed;
+  display: flex;
+  height: 3.13em;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4a4564;
+}
+.contactLink {
+  color: #f1f1f1;
+  display: flex;
+  font-size: 1.5em;
+  font-weight: 400;
+  border-radius: 4px;
+  background-color: #508094;
+  padding: 0.2em;
+  cursor: pointer;
+  transition: 0.5s;
+
+
+}
+.contactLink:hover {
+  transition: 0.5s;
+  padding: 0.35em;
 }

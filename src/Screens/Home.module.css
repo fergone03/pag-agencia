@@ -1,0 +1,34 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #1a1826, #413b5e);
+  padding: 1.25em 1.25em 12.5em;
+  align-items: center;
+}
+
+.titleContainer {
+    padding-top: 5em;
+}
+
+.home p {
+  font-size: 2em;
+  color: #f1f1f1;
+}
+
+.callToAction {
+    background-color: #508094;
+    padding: 0.5em;
+    margin-left: 1.25em;
+    transition: 0.5s;
+    border-radius: 2px;
+
+}
+
+.callToAction:hover {
+    padding: 1em;
+    cursor: pointer;
+}
+.ctaContainer {
+    padding-top: 2.5em;
+    color: #f1f1f1;
+}
