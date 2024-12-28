@@ -19,7 +19,7 @@
 .stepBorder {
   height: 0.25em;
   background-color: #6fcf97;
-  width: 60%;
+  width: 70%;
 }
 .stepContainer {
   display: flex;
@@ -42,11 +42,14 @@
     text-align: center;
   }
 }
-@media (min-width: 800px) and (max-width: 2559px) {
+@media (min-width: 959px) and (max-width: 2559px) {
   .stepContainer {
+  
     display: flex;
     flex-direction: row;
+    
   }
+  
   .stepNumber {
     padding-right: 1.25em;
   }

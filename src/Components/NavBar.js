@@ -20,7 +20,7 @@ const detectDimension = () => {
 
   useEffect(() => {
     window.addEventListener("resize", detectDimension);
-    windowDimension.width > 800 && setNavBarOpen(false);
+    windowDimension.width > 959 && setNavBarOpen(false);
     return () => {
       window.removeEventListener("resize", detectDimension);
     };
@@ -46,12 +46,12 @@ const detectDimension = () => {
       {!navBarOpen && (
         <p className={styles.logo}>EMPRESS | Digital Solutions</p>
       )}
-      {!navBarOpen && windowDimension.width < 800 ? (
+      {!navBarOpen && windowDimension.width < 959 ? (
         <AiOutlineMenu onClick={() => setNavBarOpen(!navBarOpen)} color="#f1f1f1"
          size={25}   style={{ cursor: 'pointer' }} 
 />
       ) : (
-        windowDimension.width < 800 && (
+        windowDimension.width < 959 && (
           <AiOutlineClose
             onClick={() => setNavBarOpen(!navBarOpen)}
             color="#f1f1f1"
@@ -78,7 +78,7 @@ const detectDimension = () => {
           ))}
         </ul>
       )}
-      {windowDimension.width > 800 && (
+      {windowDimension.width > 959 && (
         <ul className={styles.linksContainer}>
           {links.map((x) => (
             <div>

@@ -54,6 +54,10 @@
   margin-top: 1.25em;
 }
 @media (min-width: 2560px) {
+  input, textarea {
+    font-size: 3em;
+    padding-left: 0.5em;
+  }  
   .contact h2 {
     font-size: 7em;
   }
@@ -66,6 +70,7 @@
     border: 5px solid #2e4756;
     width: 50%;
     height: 20em;
+    padding-top:0.5em;
   }
   .form button {
     font-size: 3em;
