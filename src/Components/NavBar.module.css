@@ -1,3 +1,14 @@
+.navOnScroll {
+  transition: 0.5s;
+  position: fixed;
+  display: flex;
+  height: 3.13em;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #34495e;
+}
+
 .navBar {
   transition: 0.5s;
   display: flex;
@@ -14,8 +25,8 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  position:fixed;
-  background-color: #4a4564;
+  position: fixed;
+  background-color: #34495e;
   flex-direction: column;
   align-items: center;
 }
@@ -24,7 +35,7 @@
   display: flex;
   font-size: 2em;
   font-weight: 400;
-  color: #f1f1f1;
+  color: #e4e6eb;
   padding-top: 2.5em;
 }
 
@@ -37,7 +48,7 @@
   height: 1px;
   animation-name: animacionborder;
   animation-duration: 1s;
-  background-color: yellow;
+  background-color: #f5a623;
 }
 
 @keyframes animacionborder {
@@ -51,10 +62,71 @@
 
 .logo {
   display: flex;
-  color: #f1f1f1;
+  color: #e4e6eb;
   font-weight: 600;
 }
-@media (min-width: 800px) {
+@media (min-width: 2560px) {
+  .logo {
+    font-size: 3em;
+  }
+
+  .navBar {
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+  }
+
+  .linksContainer {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .navLink {
+    font-weight: 400;
+    padding-top: 0.2em;
+    font-size: 2.8em;
+    transition: 0.5s;
+  }
+
+  .navLink:hover {
+    font-size: 3.2em;
+  }
+
+  .contactLink {
+    color: #e4e6eb;
+    display: flex;
+    font-size: 3em;
+    font-weight: 400;
+    border-radius: 4px;
+    background-color: #6fcf97;
+    padding: 0.2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .contactLink:hover {
+    font-size: 3.2em;
+    transition: 0.5s;
+    padding: 0.35em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+  }
+
+  .navOnScroll {
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    background-color: #34495e;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 2559px) {
   .logo {
     font-size: 1.5em;
   }
@@ -81,6 +153,8 @@
   }
   .contactLink:hover {
     font-size: 1.5em;
+    transition: 0.5s;
+    padding: 0.35em;
   }
 
   .navOnScroll {
@@ -88,33 +162,18 @@
     align-items: center;
     justify-content: space-evenly;
     height: 50px;
-    background-color: #4a4564;
+    background-color: #34495e;
   }
-}
-.navOnScroll {
-  transition: 0.5s;
-  position:fixed;
-  display: flex;
-  height: 3.13em;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #4a4564;
-}
-.contactLink {
-  color: #f1f1f1;
-  display: flex;
-  font-size: 1.5em;
-  font-weight: 400;
-  border-radius: 4px;
-  background-color: #508094;
-  padding: 0.2em;
-  cursor: pointer;
-  transition: 0.5s;
-
-
-}
-.contactLink:hover {
-  transition: 0.5s;
-  padding: 0.35em;
+  .contactLink {
+    color: #e4e6eb;
+    display: flex;
+    font-size: 1.5em;
+    font-weight: 400;
+    border-radius: 4px;
+    background-color: #6fcf97;
+    padding: 0.2em;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
 }

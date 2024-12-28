@@ -19,7 +19,7 @@ const Home = () => {
       </div>
       <div className={styles.ctaContainer}>
         <Link to="Contact" smooth duration={500} className={styles.callToAction}
-          >Get in Touch
+          >Get in touch
            </Link>
            <Link to="Contact" smooth duration={500} className={styles.callToAction}
           >Get a quote

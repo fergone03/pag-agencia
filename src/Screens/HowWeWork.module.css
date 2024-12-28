@@ -3,11 +3,21 @@
   padding-top: 6.25em;
   padding-bottom: 6.25em;
   flex-direction: column;
-  background: linear-gradient(180deg, #1a1826, #413b5e);
+  background: linear-gradient(180deg, #102a43, #243b53);
 }
 .title {
   font-size: 3em;
-  color: #f1f1f1;
+  color: #e4e6eb;
   font-weight: 400;
   text-align: center;
+
+}
+@media (min-width: 2560px) {
+  .title {
+    font-size: 7em;
+    color: #e4e6eb;
+    font-weight: 400;
+    text-align: center;
+  
+  }
 }

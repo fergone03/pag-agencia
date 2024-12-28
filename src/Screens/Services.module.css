@@ -1,7 +1,7 @@
 .services {
   display: flex;
   padding-top: 12.5em;
-  background: linear-gradient(0deg, #1a1826, #413b5e);
+  background: linear-gradient(0deg, #102a43, #243b53);
   align-items: center;
   flex-direction: column;
 }
@@ -13,12 +13,26 @@
 }
 
 .services p {
-  color: #f1f1f1;
+  color: #e4e6eb;
   padding-bottom: 3.75em;
   font-size: 1.5em;
   text-align: center;
 }
-@media (min-width: 800px) {
+@media (min-width: 2560px) {
+  .webImage {
+    width: 894px; 
+    height: 579px; 
+    padding-bottom: 10em; 
+  }
+  
+  .services p {
+    color: #e4e6eb;
+    padding-bottom: 3.75em;
+    font-size: 3.5em;
+    text-align: center;
+  }
+}
+@media (min-width: 800px) and (max-width: 2559px) {
   .services p {
     font-size: 2.5em;
   }

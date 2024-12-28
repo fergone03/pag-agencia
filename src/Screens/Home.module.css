@@ -1,8 +1,8 @@
 .home {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, #1a1826, #413b5e);
-  padding: 1.25em 1.25em 12.5em;
+  background: linear-gradient(180deg, #102a43, #243b53);
+  padding: 1.25em 1.25em 30em;
   align-items: center;
 }
 
@@ -12,16 +12,15 @@
 
 .home p {
   font-size: 2em;
-  color: #f1f1f1;
+  color: #e4e6eb;
 }
 
 .callToAction {
-    background-color: #508094;
+    background-color: #6fcf97;
     padding: 0.5em;
     margin-left: 1.25em;
     transition: 0.5s;
     border-radius: 2px;
-
 }
 
 .callToAction:hover {
@@ -30,5 +29,35 @@
 }
 .ctaContainer {
     padding-top: 2.5em;
-    color: #f1f1f1;
+    color: #e4e6eb;
+}
+@media (min-width: 2560px) {
+  .titleContainer {
+    padding-top: 20em;
+  }
+
+  .home p {
+    font-size: 5em;
+    color: #e4e6eb;
+  }
+
+  .callToAction {
+    font-size: 3em;
+    background-color: #6fcf97;
+    padding: 1em;
+    margin-right: 0;
+    margin-left: 3em;
+    transition: 0.5s;
+    border-radius: 40px;
+  }
+
+  .callToAction:hover {
+    font-size: 3.5em;
+    padding:1.6em;
+    cursor: pointer;
+  }
+  .ctaContainer {
+    padding-top: 2.5em;
+    color: #e4e6eb;
+  }
 }
