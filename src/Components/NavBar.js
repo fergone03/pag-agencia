@@ -44,7 +44,7 @@ const detectDimension = () => {
       }
     >
       {!navBarOpen && (
-        <p className={styles.logo}>EMPRESS | Digital Solutions</p>
+        <p className={styles.logo}>49% | Digital Solutions</p>
       )}
       {!navBarOpen && windowDimension.width < 959 ? (
         <AiOutlineMenu onClick={() => setNavBarOpen(!navBarOpen)} color="#f1f1f1"
