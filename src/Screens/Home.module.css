@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg, #102a43, #243b53);
-  padding: 1.25em 1.25em 30em;
+  padding: 1.25em 1.25em 5em;
   align-items: center;
 }
 
 .titleContainer {
-    padding-top: 5em;
+  padding-top: 5em;
 }
 
 .home p {
@@ -16,20 +16,20 @@
 }
 
 .callToAction {
-    background-color: #6fcf97;
-    padding: 0.5em;
-    margin-left: 1.25em;
-    transition: 0.5s;
-    border-radius: 2px;
+  background-color: #6fcf97;
+  padding: 0.5em;
+  margin-left: 1.25em;
+  transition: 0.5s;
+  border-radius: 2px;
 }
 
 .callToAction:hover {
-    padding: 1em;
-    cursor: pointer;
+  padding: 1em;
+  cursor: pointer;
 }
 .ctaContainer {
-    padding-top: 2.5em;
-    color: #e4e6eb;
+  padding-top: 2.5em;
+  color: #e4e6eb;
 }
 @media (min-width: 2560px) {
   .titleContainer {
@@ -53,7 +53,7 @@
 
   .callToAction:hover {
     font-size: 3.5em;
-    padding:1.6em;
+    padding: 1.6em;
     cursor: pointer;
   }
   .ctaContainer {

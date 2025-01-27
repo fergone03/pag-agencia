@@ -41,15 +41,15 @@ const detectDimension = () => {
           : scrollPosition > 0
           ? styles.navOnScroll
           : styles.navBar
-      }
-    >
+      }x
+
       {!navBarOpen && (
         <p className={styles.logo}>49% | Digital Solutions</p>
       )}
       {!navBarOpen && windowDimension.width < 959 ? (
         <AiOutlineMenu onClick={() => setNavBarOpen(!navBarOpen)} color="#f1f1f1"
-         size={25}   style={{ cursor: 'pointer' }} 
-/>
+         size={25}   style={{ cursor: 'pointer' }} />
+
       ) : (
         windowDimension.width < 959 && (
           <AiOutlineClose

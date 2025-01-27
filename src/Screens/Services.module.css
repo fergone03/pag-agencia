@@ -1,6 +1,6 @@
 .services {
   display: flex;
-  padding-top: 12.5em;
+  padding-top: 2.5em;
   background: linear-gradient(0deg, #102a43, #243b53);
   align-items: center;
   flex-direction: column;
@@ -21,11 +21,11 @@
 }
 @media (min-width: 2560px) {
   .webImage {
-    width: 894px; 
-    height: 579px; 
-    padding-bottom: 10em; 
+    width: 894px;
+    height: 579px;
+    padding-bottom: 10em;
   }
-  
+
   .services p {
     color: #e4e6eb;
     padding-bottom: 3.75em;
