@@ -18,8 +18,8 @@
 - [📁 Estructura del Proyecto](#-estructura-del-proyecto)
   - [📂 Índice del Proyecto](#-índice-del-proyecto)
 - [🚀 Comenzando](#-comenzando)
-  - [☑️ Prerrequisitos](#-prerrequisitos)
-  - [🤖 Uso](#🤖-uso)
+  - [☑️ Requisitos](#-prerrequisitos)
+  - [🤖 Link](#🤖-uso)
 
 ---
 
@@ -228,12 +228,13 @@
 
 ---
 
-### ☑️ Prerrequisitos
+### ☑️ Requisitos
 
 Antes de comenzar con pag-agencia, asegúrate de que tu entorno de ejecución cumpla con los siguientes requisitos:
 
-- **Lenguaje de Programación:** React y JavaScript
+- Navegador web compatible con HTML5, CSS3 y JavaScript.
+- SO con animaciones activas.
 
-### 🤖 Uso
-Ejecuta pag-agencia usando el siguiente comando:
-
+### 🤖 Link
+Visita pag-agencia usando el siguiente comando:
+https://49percent.netlify.app 
