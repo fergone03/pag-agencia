@@ -5,14 +5,14 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useScrollPosition } from "../Hooks/scrollPosition";
 
 const NavBar = () => {
-  const [navBarOpen, setNavBarOpen] = React.useState(false);
+  const [navBarOpen, setNavBarOpen] = useState(false);
   const [windowDimension, setWindowDimension] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
   });
 
-const detectDimension = () => {
-  setWindowDimension({
+  const detectDimension = () => {
+    setWindowDimension({
       width: window.innerWidth,
       height: window.innerHeight,
     });
@@ -20,7 +20,7 @@ const detectDimension = () => {
 
   useEffect(() => {
     window.addEventListener("resize", detectDimension);
-    windowDimension.width > 959 && setNavBarOpen(false);
+    if (windowDimension.width > 959) setNavBarOpen(false);
     return () => {
       window.removeEventListener("resize", detectDimension);
     };
@@ -32,7 +32,9 @@ const detectDimension = () => {
     { id: 3, link: "HowWeWork", display: "How we work" },
     { id: 4, link: "Benefits" },
   ];
+
   const scrollPosition = useScrollPosition();
+
   return (
     <div
       className={
@@ -41,29 +43,30 @@ const detectDimension = () => {
           : scrollPosition > 0
           ? styles.navOnScroll
           : styles.navBar
-      }x
-
-      {!navBarOpen && (
-        <p className={styles.logo}>49% | Digital Solutions</p>
-      )}
+      }
+    >
+      {!navBarOpen && <p className={styles.logo}>49% | Digital Solutions</p>}
       {!navBarOpen && windowDimension.width < 959 ? (
-        <AiOutlineMenu onClick={() => setNavBarOpen(!navBarOpen)} color="#f1f1f1"
-         size={25}   style={{ cursor: 'pointer' }} />
-
+        <AiOutlineMenu
+          onClick={() => setNavBarOpen(!navBarOpen)}
+          color="#f1f1f1"
+          size={25}
+          style={{ cursor: "pointer" }}
+        />
       ) : (
         windowDimension.width < 959 && (
           <AiOutlineClose
             onClick={() => setNavBarOpen(!navBarOpen)}
             color="#f1f1f1"
             size={25}
-            style={{ cursor: 'pointer', paddingTop: '1em' }} 
-            />
+            style={{ cursor: "pointer", paddingTop: "1em" }}
+          />
         )
       )}
       {navBarOpen && (
         <ul className={styles.linksContainer}>
           {links.map((x) => (
-            <div>
+            <li key={x.id}>
               <Link
                 onClick={() => setNavBarOpen(false)}
                 to={x.link}
@@ -74,14 +77,14 @@ const detectDimension = () => {
                 {x.link === "HowWeWork" ? "How we work" : x.link}
               </Link>
               <div className={styles.border}></div>
-            </div>
+            </li>
           ))}
         </ul>
       )}
       {windowDimension.width > 959 && (
         <ul className={styles.linksContainer}>
           {links.map((x) => (
-            <div>
+            <li key={x.id}>
               <Link
                 onClick={() => setNavBarOpen(false)}
                 to={x.link}
@@ -92,17 +95,19 @@ const detectDimension = () => {
                 {x.link === "HowWeWork" ? "How we work" : x.link}
               </Link>
               <div className={styles.border}></div>
-            </div>
+            </li>
           ))}
-          <Link
-           onClick={() => setNavBarOpen(false)}
-           to="Contact"
-           smooth
-           duration={500}
-           className={styles.contactLink}
-           >
-            Contact
+          <li>
+            <Link
+              onClick={() => setNavBarOpen(false)}
+              to="Contact"
+              smooth
+              duration={500}
+              className={styles.contactLink}
+            >
+              Contact
             </Link>
+          </li>
         </ul>
       )}
     </div>

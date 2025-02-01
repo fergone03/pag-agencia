@@ -137,6 +137,7 @@
     height: 50px;
   }
   .linksContainer {
+    list-style: none;
     display: flex;
     width: 50%;
     flex-direction: row;
@@ -175,5 +176,4 @@
     cursor: pointer;
     transition: 0.5s;
   }
-  
 }
