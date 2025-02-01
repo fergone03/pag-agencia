@@ -78,6 +78,7 @@
   }
 
   .linksContainer {
+    list-style: none;
     display: flex;
     width: 50%;
     flex-direction: row;
