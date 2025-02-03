@@ -38,7 +38,6 @@
 - Sección de beneficios
 - Sección de contacto
 - Animaciones y transiciones suaves
-- Optimización para SEO
 - Código modular y reutilizable
 - Uso de hooks personalizados
 - Componentes estilizados con CSS Modules
