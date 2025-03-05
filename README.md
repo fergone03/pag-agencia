@@ -18,8 +18,8 @@
 - [📁 Estructura del Proyecto](#-estructura-del-proyecto)
   - [📂 Índice del Proyecto](#-índice-del-proyecto)
 - [🚀 Comenzando](#-comenzando)
-  - [☑️ Requisitos](#-prerrequisitos)
-  - [🤖 Link](#🤖-uso)
+- [Requisitos](#requisitos)
+  - [🤖 Link](#-link)
 
 ---
 
@@ -228,7 +228,7 @@
 ---
 ## 🚀 Comenzando
 
-### ☑️ Requisitos
+### Requisitos
 
 Antes de comenzar con pag-agencia, asegúrate de que tu entorno de ejecución cumpla con los siguientes requisitos:
 
