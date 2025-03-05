@@ -236,6 +236,6 @@ Antes de comenzar con pag-agencia, asegúrate de que tu entorno de ejecución cu
 - SO con animaciones activas.
 
 ### 🤖 
-Link![alt text](public/svgl.webp)
+Link![Imagen de la demo](public/svgl.webp)
 Visita pag-agencia usando el siguiente comando:
 https://49percent.netlify.app 
